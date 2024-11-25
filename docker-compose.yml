@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  frontend:
+    build:
+      context: ./frontend # Путь к папке фронтенда
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend # Путь к папке бэкенда
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - "2050:2050"

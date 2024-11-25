@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "2.0.0",
+  "description": "",
+  "repository": "",
+  "author": "Zh",
+  "license": "MIT",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=local nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "express": "^4.15.2",
+    "jayson": "^3.4.4",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "uuid": "^8.3.2"
+  },
+  "keywords": []
+}
